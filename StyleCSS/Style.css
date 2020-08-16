@@ -1,0 +1,252 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input:invalid {
+  border: 5px solid red;
+
+}
+body
+{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 100%, 74%);
+}
+.box
+{
+
+  margin: auto;
+  background-image: url(../images/bg-intro-desktop.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5vh 5vw;
+  height: 100vh;
+}
+
+.ltb
+{
+
+  margin-left:10%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 30%;
+
+}
+.ltheader{
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  line-height: 47px;
+}
+.ltbody{
+  font-size: 16px;
+  margin-top: 2vh;
+  font-weight: 400;
+
+}
+/* left side portion  */
+.rfb{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width:30%;
+  height: minmax(90%,85%);
+}
+
+.rfbody{
+  margin-top: 2.5%;
+  margin-bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  height: 100%;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.4);
+}
+.purplebutton{
+  font-size: 14px;
+  width: auto;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  height: 55px;
+  padding-top: 15px;
+  padding-bottom:10px;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.4);
+  line-height: 20px;
+}
+.purplebutton:hover
+{
+   cursor: auto;
+   transition: 150ms;
+   transition-timing-function: ease-in;
+   transform: scale(0.95);
+}
+.purplebutton>a{
+  text-align: center;
+  font-size: 12px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-decoration: none;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.inputarea
+{
+  width: 85%;
+  margin: 10px;
+  margin-top: 30px;
+  height: 45px;
+  padding-left: 5px;
+  border-radius: 5px;
+  }
+.greenbutton
+{
+  border-radius: 10px;
+-  margin-top: 20px;
+  width: 85%;
+  height: 50px;
+  text-align: center;
+  background-color: hsl(154, 59%, 51%);
+  padding-top: 15px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+
+
+.greenbutton:hover{
+  cursor: auto;
+   
+   transition: 150ms;
+   transition-timing-function: ease-in;
+   transform: scale(0.95);
+}
+.greenbutton>a
+{
+  text-decoration: none;
+  color: white;
+}
+.rffooter
+{
+  text-align: center;
+  margin: 10px 15px 15px 30px ;
+  font-size: 10px;
+    font-size: 0.9rem;
+  font-weight: 200;
+  margin-bottom: 2%;
+  color: hsl(246, 25%, 77%);
+}
+ 
+.error {
+  color: red;
+  font-size: 0.75rem;
+  font-weight: 200;
+   margin-left: 45%;
+    visibility: hidden;
+   }
+
+ 
+.erroricon
+{
+  background-image: url("../images/icon-error.svg");
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  }
+@media screen and (max-width: 575px)
+{
+body
+{
+}
+.box
+{
+
+  padding:10px ;
+  /* padding-top: 3vh; */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-size: cover;
+  background-image: url(../images/bg-intro-mobile.png);
+  margin-bottom: -5%;
+}
+.ltb
+{
+  margin-top: 20%;
+  /* box-sizing: border-box; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding left: 7.5%;
+  padding-right: 7.5%;
+
+}
+
+.ltheader{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  line-height: 30px;
+  padding-right: 10%;
+
+}
+.ltbody{
+  margin-top: 1vh;
+  padding-right: 10%;
+  font-weight: 300;
+  width: 95%;
+text-align: center;
+}
+.rfb
+{
+  margin-top: 18%;
+  width: 90%;
+  height: 80vh;
+}
+.rfbody
+{
+  margin-top: -2.5%;
+}
+.rffooter
+{
+
+  margin:
+}
+
+.attribution{
+  display: none;
+  height: 0;
+}
+.purplebutton{
+  font-size: 16px;
+  width: auto;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 5px;
+  height: 75px;
+  padding: 20px 10px;
+  box-shadow: 0px 4px 7px rgba(0,0,0,0.3);
+  line-height: 20px;
+  margin-bottom: 8%;
+}
+.purplebutton>a{
+  text-align: center;
+  font-size: 12px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-decoration: none;
+  color: white;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+}
